@@ -42,7 +42,7 @@
  只要有子级，就设置这个view的宽度为事先约好的列宽
  这里会使用到递归调用
  
- 2、不用关心同等级cell 不同父级view的关系
+ 2、不用关心同等级cell但是不同父级view的关系
  如上图，不需要设置任何2-2与2-3之间的约束关系
  
  3、保存最后一级的cell，就是没有子级的（用处：返回数据表单行的高度），通过设置最后一列的约束去控制高度
@@ -98,6 +98,7 @@
         for(JNReportHeadModel *model in data.nextLevelHeads){
             UIView *cell = [self cellView:model size:12.0];
             [self addSubview:cell];
+            //此处使用有待优化
             if([data.headTitle isEqualToString:_cellData.headTitle]){
                 if(_firstLevelView == nil){
                     _firstLevelView = [[NSMutableArray alloc] init];
@@ -162,7 +163,7 @@
         for(UIView *view in _lastLevelView){
             [view mas_makeConstraints:^(MASConstraintMaker *make) {
                 make.right.equalTo(self.mas_right).offset(-R_WidthSeparator);
-                //此处添加与上一个cell的间距约束，会出现重复添加（在testLayout:withView:方法中同级之间间距设置已经添加过），但是貌似不影响。优化：先判断是否已经添加了
+                //此处添加与上一个cell的间距约束，会出现重复添加（在layout:withView:方法中同级之间间距设置已经添加过），但是貌似不影响。优化：先判断是否已经添加了
                 if(item){
                     make.top.equalTo(item.mas_bottom).offset(R_WidthSeparator);
                 }

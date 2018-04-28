@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self test];
+    [self testColumn];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -105,7 +105,7 @@
     return rtn;
 }
 
--(void)test{
+-(void)testColumn{
     
     [self.centerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     
@@ -120,8 +120,22 @@
     }];
 }
 
+-(void)testRow{
+    [self.centerView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    int x = arc4random() % 5;
+    NSArray *rowHeads = [self testColumnHead:x];
+    JNReportHeadModel *one = [[JNReportHeadModel alloc] initWithTitle:@"000" objChildrens:rowHeads];
+    
+//    JNReportHeadModel *one = [[JNReportHeadModel alloc] initWithTitle:@"000" childrenLevel:@[@"2222",@"4444"]];
+    JNRowHeadView *view = [[JNRowHeadView alloc] initWithModel:one size:12.0];
+    [self.centerView addSubview:view];
+    [view mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.centerView);
+    }];
+}
+
 - (IBAction)buttonAction:(id)sender {
-    [self test];
+    [self testColumn];
 }
 
 @end
