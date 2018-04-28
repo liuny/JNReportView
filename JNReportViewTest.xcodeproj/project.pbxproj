@@ -11,6 +11,7 @@
 		555E07922092D4CA00FBF6D5 /* JNColumnHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 555E07902092D4CA00FBF6D5 /* JNColumnHeadCell.m */; };
 		555E07952092D5BE00FBF6D5 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 555E07942092D5BE00FBF6D5 /* CommonMethod.m */; };
 		55F30A0EC9EEE202313277BD /* libPods-JNReportViewTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 995B432E71B04A4D5F0FF3DD /* libPods-JNReportViewTest.a */; };
+		5D1A8F6E20944A280055D1ED /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1A8F6D20944A280055D1ED /* TestViewController.m */; };
 		5DFD2B421E696FC300F7DAE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD2B411E696FC300F7DAE9 /* main.m */; };
 		5DFD2B451E696FC300F7DAE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD2B441E696FC300F7DAE9 /* AppDelegate.m */; };
 		5DFD2B481E696FC300F7DAE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFD2B471E696FC300F7DAE9 /* ViewController.m */; };
@@ -35,6 +36,8 @@
 		555E07932092D5BE00FBF6D5 /* CommonMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		555E07942092D5BE00FBF6D5 /* CommonMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
 		555E07962092D67900FBF6D5 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		5D1A8F6C20944A280055D1ED /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		5D1A8F6D20944A280055D1ED /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		5DFD2B3D1E696FC300F7DAE9 /* JNReportViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JNReportViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFD2B411E696FC300F7DAE9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DFD2B431E696FC300F7DAE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				5DFD2B4E1E696FC300F7DAE9 /* LaunchScreen.storyboard */,
 				5DFD2B511E696FC300F7DAE9 /* Info.plist */,
 				5DFD2B401E696FC300F7DAE9 /* Supporting Files */,
+				5D1A8F6C20944A280055D1ED /* TestViewController.h */,
+				5D1A8F6D20944A280055D1ED /* TestViewController.m */,
 			);
 			path = JNReportViewTest;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				5DFD2B451E696FC300F7DAE9 /* AppDelegate.m in Sources */,
 				555E078F2092D49C00FBF6D5 /* UIButtonBlcok.m in Sources */,
 				555E07952092D5BE00FBF6D5 /* CommonMethod.m in Sources */,
+				5D1A8F6E20944A280055D1ED /* TestViewController.m in Sources */,
 				5DFD2B421E696FC300F7DAE9 /* main.m in Sources */,
 				5DFD2B5F1E69706C00F7DAE9 /* JNColumnHeadView.m in Sources */,
 				555E07922092D4CA00FBF6D5 /* JNColumnHeadCell.m in Sources */,

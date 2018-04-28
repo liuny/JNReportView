@@ -16,6 +16,7 @@
 #define R_ColorSeparator    kGetColor(228,228,228)  //分割线颜色
 #define R_ColorHeadFont     kGetColor(0,0,0)        //表头字体颜色
 #define R_WidthSeparator    1.0                     //分割线宽度
+#define R_FontSize          12.0
 
 /*
  *需要使用到第三方库Masonry
